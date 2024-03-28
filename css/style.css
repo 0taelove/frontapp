@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap'); /* 주로 사용 할 Noto 웹 폰트 링크 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap'); /* 필요에 따라 사용 할 Mont 웹 폰트 링크 */
+
+* { /* 공통 적인 전체 선택자에 적용 */
+    color: #000; /* 검정 글씨 적용 */
+    box-sizing: border-box; /* 너비 높이를 경계에 맞춰서(늘어나지 않게하기 위함) */
+    outline: none; /* 검색창 경계선 제거 */
+    font-family: "Noto Sans KR", sans-serif; /* 폰트 글꼴 적용 */
+}
+
+html {
+    font-size: 13px;
+    background: #f8f8f8;
+}
+/* 스타일 초기화 S */
+body {
+    margin: 0 auto;
+    max-width: 720px;
+    min-width: 360px;
+    background: #fff;
+}
+
+ul, ol, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+img {
+    border: 0; /* 이미지 경계선 제거 */
+}
+/* 스타일 초기화 E */
+
+/* 공통 스타일 S */
+.montserrat { /* 필요에 따라 사용 할 Mont 웹 폰트 */
+    font-family: "Montserrat", sans-serif;
+}
+
+/* 공통 스타일 E */
+
+/* 헤더 영역 S */
+header .site-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    border-bottom: 1px solid #e6e6e6; /* 경계선 */
+    padding: 0 15px; /* 상단 좌우 내부 여백 */
+}
+
+header .logo img {
+    height: 34px;
+}
+
+header .site-top i {
+    font-size: 2rem; /* 위에서 적용해놓은 13px의 2rem -> 26px; */
+}
+
+header .site-top .left i {
+    margin-right: 10px; /* 외부 오른족 여백 */
+}
+
+header .site-top .right i {
+    margin-left: 10px; /* 외부 왼쪽 여백 */
+}
+
+header nav {
+    display: flex;
+    height: 44px;
+}
+
+header nav a {
+    flex-grow: 1; /* 전체 영역을 각 요소가 1등분씩 나눠 가짐 */
+    width: 0; /* 여백을 없앰 */
+    text-align: center; /* 가운데 정렬 */
+    line-height: 44px; /* 행 간격 높이와 동일하게 맞추면 정가운데로 옴 */
+}
+/* 헤더 영역 E */
+
+/* 메인 배너 영역 S */
+.main-banner img {
+    width: 100%;
+}
+
+/* 메인 배너 영역 E */
+
+/* 서브 메뉴 영역 S */
+.sub-menus {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-menus a {
+    width: calc(100% / 3);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+/* 서브 메뉴 영역 E */
