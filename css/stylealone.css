@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap'); /* 주로 사용 할 Noto 웹 폰트 링크 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap'); /* 필요에 따라 사용 할 Mont 웹 폰트 링크 */
+
+* { /* 공통 적인 전체 선택자에 적용 */
+    color: #000; /* 검정 글씨 적용 */
+    box-sizing: border-box; /* 너비 높이를 경계에 맞춰서(늘어나지 않게하기 위함) */
+    outline: none; /* 검색창 경계선 제거 */
+    font-family: "Noto Sans KR", sans-serif; /* 폰트 글꼴 적용 */
+}
+
+html {
+    font-size: 13px;
+    background: #f8f8f8;
+}
+/* 스타일 초기화 S */
+body {
+    margin: 0 auto;
+    max-width: 720px;
+    min-width: 360px;
+    background: #fff;
+}
